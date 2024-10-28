@@ -1,0 +1,86 @@
+:root {
+    --fonte-principal: 'Roboto', sans-serif;
+    --fonte-titulo: 'Lobster', cursive;
+    --cor-texto: #696969;
+    --cor-fundo: #F5F5F5;
+    --cor-botao: #007bff;
+    --cor-botao-hover: #0056b3;
+    --cor-botao-deletar: red;
+    --cor-container-fundo: white;
+    --sombra-container: rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: var(--cor-container-fundo);
+    box-shadow: 0 4px 8px var(--sombra-container);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--cor-texto);
+    font-family: var(--fonte-titulo);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    color: white;
+    background-color: var(--cor-botao);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.delete-btn {
+    color: var(--cor-botao-deletar);
+    cursor: pointer;
+}
